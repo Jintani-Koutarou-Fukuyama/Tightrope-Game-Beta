@@ -6,11 +6,13 @@ public class EventDino : MonoBehaviour
 
     [SerializeField] GameObject raser;//レーザーのプレハブ用
     [SerializeField] Transform ebentdino;//イベント怪獣の座標取得用
+    public Helicopter heli;
     public AudioSource beamAudio;//ビーム音
     public AudioSource beamChargeAudio;//ビームチャージ音
     public AudioSource asiato;
     private Animator anim;
     private GameObject spawnraser;//レーザー呼び出す用
+    //private Transform heli;//ヘリの座標
     float OffsetY = -5.5f;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Awake()
@@ -26,6 +28,13 @@ public class EventDino : MonoBehaviour
             Transform origin = transform.Find("BeamCharge");
             if (origin != null)
                 beamChargeAudio = origin.GetComponent<AudioSource>();
+        }
+        if(heli==null)
+        {
+            GameObject origin = GameObject.Find("HeliFlag");
+            if (origin != null)
+                heli = origin.GetComponent<Helicopter>();
+            Debug.Log("heliを取得");
         }
     }
     void Start()
@@ -56,19 +65,22 @@ public class EventDino : MonoBehaviour
        
         anim.speed = 0.2f;
         anim.SetTrigger("Attack");
-        Quaternion rotation = Quaternion.Euler(-48, -90, 0);//レーザーの向き
+        Quaternion rotation = Quaternion.Euler(0, 0, 0);//レーザーの向き
         //怪獣の座標を計算
         Vector3 dinopos =transform.position;
         //怪獣の口らへんにレーザーを召喚
         // 真上の座標を計算
-        Vector3 spawnPos = new Vector3(
+        /*Vector3 spawnPos = 
+            new Vector3(
             dinopos.x+4.8f,
             dinopos.y + OffsetY,
-            dinopos.z-1f);
+            dinopos.z-1f);*/
              
 
         dinopos.y = OffsetY;
-        spawnraser = Instantiate(raser, spawnPos, rotation);
+        spawnraser = Instantiate(raser, ebentdino.position, ebentdino.rotation);
+        spawnraser.transform.LookAt(heli.spawnedObj.transform);
+        spawnraser.transform.position = ebentdino.transform.position;
         beamChargeAudio.Play();
         Invoke("Beam", 2.0f);
     }

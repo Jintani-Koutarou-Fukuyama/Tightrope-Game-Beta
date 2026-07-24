@@ -120,7 +120,11 @@ public class PosingEvent : MonoBehaviour
 
     void PoseEvent()
     {
-        exoloOarentReset.ParentReset();
+        //1秒後に爆発ポイントを子じゃなくする
+        Invoke(nameof(ParentReset),1f);
+        Vector3 currentRotation = player.transform.eulerAngles;
+        currentRotation.x = 0f;
+        player.transform.eulerAngles = currentRotation;
         DinoStoping = true;//怪獣を固定
         playerMover.PlayerStoping = true;//プレイヤーを固定
         startplayer = player.transform.rotation;//イベント前の回転を格納
@@ -130,6 +134,7 @@ public class PosingEvent : MonoBehaviour
         startstickposition = stick.transform.position;//イベント前の座標を格納
         startplayerRightHundposition = playerRightHund.transform.position;//イベント前の座標を格納
         startplayerLeftHubdposition = playerLeftHund.transform.position;//イベント前の座標を格納
+        player.transform.LookAt(Bill.transform); //プレイヤーの向きを調整する
         Invoke(nameof(DinoEvent), 0.1f);//0.1秒語にポーズイベントを始める
     }
     void DinoEvent()
@@ -144,6 +149,10 @@ public class PosingEvent : MonoBehaviour
         balance.PauseNormalBalanceGauge();//バランスゲージを止める
         Timer.SetActive(false);//タイマーを非表示にする
 
+    }
+    void ParentReset()
+    {
+        exoloOarentReset.ParentReset();
     }
     void DinoIdouFlag()
     {

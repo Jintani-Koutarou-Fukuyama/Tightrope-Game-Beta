@@ -8,11 +8,15 @@ public class HahenRotation : MonoBehaviour
     [SerializeField] float roteZ = 1.0f;
     [SerializeField, Header("îjï–ÇÃîÚÇ‘ÉXÉsÅ[Éh")] float speed = 1.0f;
     [SerializeField, Header("îjï–ÇÃîÚÇ‘ÉXÉsÅ[Éh")] float slowspeed = 0.25f;
+    [SerializeField] HahenMove move;
     public bool slow = false;//ÉXÉçÅ[ÉÇÅ[ÉVÉáÉì
         // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        
+        
         Invoke(nameof(SlowFlagTrue), 0.5f);
+       
     }
 
     // Update is called once per frame
@@ -24,13 +28,17 @@ public class HahenRotation : MonoBehaviour
         if(slow==false)
         {
             //îjï–ÇÃà⁄ìÆ
-            transform.position += new Vector3(1.0f, 0.0f, 0.0f) * speed * Time.deltaTime;
+            // transform.Translate(Vector3.forward * speed * Time.deltaTime);
+            // transform.position += new Vector3(1.0f, 0.0f, 0.0f) * speed * Time.deltaTime;
+            move.slowmove = false;
             transform.Rotate(roteX, roteY, roteZ * Time.deltaTime);//îjï–ÇÃâÒì]
         }
         if (slow == true)
         {
             //îjï–ÇÃà⁄ìÆ
-            transform.position += new Vector3(1.0f, 0.0f, 0.0f) * speed *slowspeed * Time.deltaTime;
+            //transform.Translate(Vector3.forward * speed * slowspeed * Time.deltaTime);
+            // transform.position += new Vector3(1.0f, 0.0f, 0.0f) * speed *slowspeed * Time.deltaTime;
+            move.slowmove = true;
             transform.Rotate(roteX*slowspeed, roteY*slowspeed, roteZ*slowspeed * Time.deltaTime);//îjï–ÇÃâÒì]
             Debug.Log("íxÇ≠Ç»Ç¡ÇΩ");
         }
@@ -44,11 +52,10 @@ public class HahenRotation : MonoBehaviour
     }
    void HahenPositionReset()
     {
-        Vector3 pos = new Vector3(-21.144f, 2.3f, -4.15f);
-        transform.position = pos;
-        Invoke(nameof(SlowFinish), 3.0f);
+        move.reset = true;
+        
     }
-    void SlowFinish()
+    public void SlowFinish()
     {
         slow = false;
     }

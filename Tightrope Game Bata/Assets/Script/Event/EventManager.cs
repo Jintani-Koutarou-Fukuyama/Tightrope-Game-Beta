@@ -23,7 +23,7 @@ public class EventManager : MonoBehaviour
     [SerializeField] bool Posing = true;
     [SerializeField] bool Sniper = true;
     [SerializeField] private GameObject player;//プレイヤーの座標取得用
-    private int ramdomCount; // ランダムな数字
+    public int ramdomCount; // ランダムな数字
     [SerializeField]EventFlag eventFlag;  // イベントフラグのprefab
 
     // イベントを起こすためのゲームオブジェクト
@@ -47,15 +47,32 @@ public class EventManager : MonoBehaviour
     private void Start()
     {
         EventFlag e;
-        
-        // イベントフラグの生成、設定
-        e = Instantiate(eventFlag,new Vector3(-0.7f,3.0f,-4.0f),Quaternion.identity);//１個目のイベント
-        e.SetManager(this);
-        e = Instantiate(eventFlag, new Vector3(-3.0f, 3.0f, -4.0f), Quaternion.identity);//2個目のイベント
-        e.SetManager(this);
-        e = Instantiate(eventFlag, new Vector3(-6.5f, 3.0f, -4.0f), Quaternion.identity);//3個目のイベント
-        e.SetManager(this);
 
+        // イベントフラグの生成、設定
+        /* e = Instantiate(eventFlag,new Vector3(-1.2f,3.0f,-4.0f),Quaternion.identity);//１個目のイベント
+         e.SetManager(this);
+         e = Instantiate(eventFlag, new Vector3(-3.5f, 3.0f, -4.0f), Quaternion.identity);//2個目のイベント
+         e.SetManager(this);
+         e = Instantiate(eventFlag, new Vector3(-6.5f, 3.0f, -4.0f), Quaternion.identity);//3個目のイベント
+         e.SetManager(this);*/
+
+        //任意のイベントを付けたいときはSetEvent(EventType.イベント名)でできるよ
+
+        e = Instantiate(eventFlag, new Vector3(12.74f, 3.0f, -2.0f), Quaternion.identity);//１個目のイベント
+        e.SetManager(this);
+        e.SetEvent(EventType.Earthquake);//1個目は地震を起こす
+        e = Instantiate(eventFlag, new Vector3(6.057f, 3.0f, 3.082f), Quaternion.identity);//2個目のイベント
+        e.SetManager(this);
+        e.SetEvent(EventType.Posing);//2個目はポーズを起こす
+        e = Instantiate(eventFlag, new Vector3(5.55f, 3.0f, 5.33f), Quaternion.identity);//3個目のイベント
+        e.SetManager(this);
+        e.SetEvent(EventType.Sniper);//3個目はスナイパーを起こす
+        e = Instantiate(eventFlag, new Vector3(-4.66f, 3.0f, 6.96f), Quaternion.identity);//4個目のイベント
+        e.SetManager(this);
+        e.SetEvent(EventType.Helicopter);//4個目はヘリを起こす
+        e = Instantiate(eventFlag, new Vector3(-4.44f, 3.0f, 3.58f), Quaternion.identity);//5個目のイベント
+        e.SetManager(this);
+        e.SetEvent(EventType.Helicopter);//5個目はヘリを起こす
     }
 
     // イベントフラグがプレイヤーにあたると呼び出されるメソッド
@@ -86,7 +103,7 @@ public class EventManager : MonoBehaviour
                 }
                 if (HelicopterFlag == true)
                 {
-                    RandomEvent();//ポーズイベントをやったことがあったらもう一回イベント抽選する
+                    RandomEvent();//ヘリイベントをやったことがあったらもう一回イベント抽選する
                     Debug.Log("再抽選");
                     break;
                 }
@@ -113,6 +130,74 @@ public class EventManager : MonoBehaviour
             case (int)EventType.Sniper:
                 if(Sniper==false)
                 { 
+                    RandomEvent();
+                    break;
+                }
+                if (sniperEventManager == null)
+                {
+                    Debug.LogWarning("EventManager: SniperEventManager が設定されていません。");
+                    break;
+                }
+
+                sniperEventManager.StartSniperEvent();
+                break;
+            default:
+                Debug.Log("イベントが起こりました。");
+                break;
+        }
+
+    }
+    public void Event(EventType type)
+    {
+        //Debug.Log(type + ("マネージャー"));
+        // イベントの種類を判定する
+        switch (type)
+        {
+            // 地震イベントの場合
+            case EventType.Earthquake:
+                if (Earthquake == false)
+                {
+                    RandomEvent();
+                    break;
+                }
+                e_earthquake.StartEvent(); // 地震を起こす
+                break;
+            // ヘリイベントの場合
+            case EventType.Helicopter:
+                if (Helicopter == false)
+                {
+                    RandomEvent();
+                    break;
+                }
+                if (HelicopterFlag == true)
+                {
+                    RandomEvent();//ヘリイベントをやったことがあったらもう一回イベント抽選する
+                    Debug.Log("再抽選");
+                    break;
+                }
+                heliscript.EventFlag(); // ヘリイベントを起こす
+                HelicopterFlag = true;
+                break;
+            // ポーズイベントの場合
+            case EventType.Posing:
+                if (Posing == false)
+                {
+                    RandomEvent();
+                    break;
+                }
+                if (PosingFlag == true)
+                {
+                    RandomEvent();//ポーズイベントをやったことがあったらもう一回イベント抽選する
+                    Debug.Log("再抽選");
+                    break;
+                }
+                posingscript.EventFlag(); // ポーズイベントを起こす
+                PosingFlag = true;
+                break;
+            // スナイパーイベントの場合
+            case EventType.Sniper:
+                if (Sniper == false)
+                {
                     RandomEvent();
                     break;
                 }

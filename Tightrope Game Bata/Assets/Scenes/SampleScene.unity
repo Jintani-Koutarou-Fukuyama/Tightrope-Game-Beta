@@ -244,19 +244,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3925493241121951573, guid: 16856126b1808f449b4364f90336750b, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.5060365
+      value: 0.8897849
       objectReference: {fileID: 0}
     - target: {fileID: 3925493241121951573, guid: 16856126b1808f449b4364f90336750b, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.083412945
+      value: 0.060774818
       objectReference: {fileID: 0}
     - target: {fileID: 3925493241121951573, guid: 16856126b1808f449b4364f90336750b, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.8470389
+      value: -0.45126414
       objectReference: {fileID: 0}
     - target: {fileID: 3925493241121951573, guid: 16856126b1808f449b4364f90336750b, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.13962238
+      value: 0.030822618
       objectReference: {fileID: 0}
     - target: {fileID: 3925493241121951573, guid: 16856126b1808f449b4364f90336750b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -591,6 +591,37 @@ MonoBehaviour:
       BarrelClipping: 0.25
       Anamorphism: 0
   BlendHint: 0
+--- !u!1 &13905135
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 13905136}
+  m_Layer: 0
+  m_Name: LeftRope2End
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &13905136
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 13905135}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.9, y: 5.1, z: 5.9}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1184916289}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &17265246 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1510712901304232389, guid: a0784937bb3831e439d58b0e2bf68381, type: 3}
@@ -1127,6 +1158,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rope_Part_1 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5045101233709593050, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: m_TagString
+      value: RopeParts
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847713128311920299, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: cff2b2942446bed4faed2517b78b4d76, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1204,37 +1243,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a0784937bb3831e439d58b0e2bf68381, type: 3}
---- !u!1 &55376488
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 55376489}
-  m_Layer: 0
-  m_Name: RightRope3Start
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &55376489
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 55376488}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.3, y: 5.1, z: 10.8}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1558248897}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &62277711
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1311,6 +1319,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rope_Part_1 (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 5045101233709593050, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: m_TagString
+      value: RopeParts
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847713128311920299, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: cff2b2942446bed4faed2517b78b4d76, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1556,6 +1572,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rope_Part_1 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 5045101233709593050, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: m_TagString
+      value: RopeParts
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847713128311920299, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: cff2b2942446bed4faed2517b78b4d76, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1649,6 +1673,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rope_Part_1 (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 5045101233709593050, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: m_TagString
+      value: RopeParts
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847713128311920299, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: cff2b2942446bed4faed2517b78b4d76, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2449,6 +2481,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rope_Part_1 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 5045101233709593050, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: m_TagString
+      value: RopeParts
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847713128311920299, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: cff2b2942446bed4faed2517b78b4d76, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2579,37 +2619,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4298159172810841585, guid: 6571bbbccee7f2d45bb86da3391f3d61, type: 3}
   m_PrefabInstance: {fileID: 1081838863}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &189875723
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 189875724}
-  m_Layer: 0
-  m_Name: CommonRope1End
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &189875724
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 189875723}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.6, y: 5.1, z: 5.2}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1558248897}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &190026296
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2977,6 +2986,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rope_Part_1 (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 5045101233709593050, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: m_TagString
+      value: RopeParts
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847713128311920299, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: cff2b2942446bed4faed2517b78b4d76, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3253,6 +3270,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rope_Part_1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5045101233709593050, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: m_TagString
+      value: RopeParts
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847713128311920299, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: cff2b2942446bed4faed2517b78b4d76, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3419,42 +3444,19 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rope_Part_1 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 5045101233709593050, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: m_TagString
+      value: RopeParts
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847713128311920299, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: cff2b2942446bed4faed2517b78b4d76, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
---- !u!1 &245365474
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 245365475}
-  m_Layer: 0
-  m_Name: RightRope2Start
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &245365475
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 245365474}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.09, y: 5.1, z: 8}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1558248897}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &256949429 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7185999886079989835, guid: 6571bbbccee7f2d45bb86da3391f3d61, type: 3}
@@ -3555,6 +3557,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rope_Part_1
       objectReference: {fileID: 0}
+    - target: {fileID: 5045101233709593050, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: m_TagString
+      value: RopeParts
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847713128311920299, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: cff2b2942446bed4faed2517b78b4d76, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4044,6 +4054,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rope_Part_1 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 5045101233709593050, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: m_TagString
+      value: RopeParts
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847713128311920299, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: cff2b2942446bed4faed2517b78b4d76, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4059,6 +4077,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1558725524716413012, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
   m_PrefabInstance: {fileID: 283655131}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &289979341
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 289979342}
+  m_Layer: 0
+  m_Name: LeftRope3Start
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &289979342
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 289979341}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -7.9, y: 5.1, z: 5.7}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1184916289}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &294310641
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4303,37 +4352,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 664776767152005846, guid: 24a4954db6cc9f04288f2482040da3d3, type: 3}
   m_PrefabInstance: {fileID: 2089775580}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &331563957
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 331563958}
-  m_Layer: 0
-  m_Name: CommonRope1Start
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &331563958
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 331563957}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.3, y: 5.1, z: -1.2}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1558248897}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &332181147 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 958761491592708671, guid: 6571bbbccee7f2d45bb86da3391f3d61, type: 3}
@@ -4415,6 +4433,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rope_Part_1 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 5045101233709593050, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: m_TagString
+      value: RopeParts
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847713128311920299, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: cff2b2942446bed4faed2517b78b4d76, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4506,6 +4532,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rope_Part_1 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 5045101233709593050, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: m_TagString
+      value: RopeParts
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847713128311920299, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: cff2b2942446bed4faed2517b78b4d76, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4925,6 +4959,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rope_Part_1 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 5045101233709593050, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: m_TagString
+      value: RopeParts
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847713128311920299, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: cff2b2942446bed4faed2517b78b4d76, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5224,6 +5266,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6215649251688355017, guid: ea4a3e3ba7c6d694d84c84b4e28c9b6f, type: 3}
       propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6215649251688355017, guid: ea4a3e3ba7c6d694d84c84b4e28c9b6f, type: 3}
+      propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8430255440781894859, guid: ea4a3e3ba7c6d694d84c84b4e28c9b6f, type: 3}
@@ -5608,6 +5654,8 @@ RectTransform:
   - {fileID: 1411898880}
   - {fileID: 2126544336}
   - {fileID: 1253632513}
+  - {fileID: 670072714}
+  - {fileID: 1379075730}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -5759,6 +5807,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rope_Part_1 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5045101233709593050, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: m_TagString
+      value: RopeParts
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847713128311920299, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: cff2b2942446bed4faed2517b78b4d76, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6154,6 +6210,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rope_Part_1 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 5045101233709593050, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: m_TagString
+      value: RopeParts
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847713128311920299, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: cff2b2942446bed4faed2517b78b4d76, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6343,6 +6407,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2845826779156738318, guid: de6a08411e1ced64d95afea0fa2ff1dc, type: 3}
   m_PrefabInstance: {fileID: 1608269317}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &464529536
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 464529537}
+  m_Layer: 0
+  m_Name: CommonRope1Start
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &464529537
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 464529536}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 6.3, y: 5.1, z: -1.2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1184916289}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &466510332
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6729,6 +6824,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rope_Part_1 (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 5045101233709593050, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: m_TagString
+      value: RopeParts
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847713128311920299, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: cff2b2942446bed4faed2517b78b4d76, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6948,6 +7051,7 @@ MonoBehaviour:
   Posing: 1
   Sniper: 1
   player: {fileID: 2019293626}
+  ramdomCount: 0
   eventFlag: {fileID: 8885386143651873786, guid: d13e83037361b574ab911282b4faa680, type: 3}
   e_earthquake: {fileID: 1550136032}
   heliscript: {fileID: 1625703891}
@@ -7172,6 +7276,37 @@ MonoBehaviour:
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
+--- !u!1 &532709946
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 532709947}
+  m_Layer: 0
+  m_Name: RightRope3End
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &532709947
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 532709946}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -16.2, y: 5.1, z: 10.3}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1184916289}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &533957399 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8253772973629899221, guid: 6571bbbccee7f2d45bb86da3391f3d61, type: 3}
@@ -7268,6 +7403,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rope_Part_1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5045101233709593050, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: m_TagString
+      value: RopeParts
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847713128311920299, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: cff2b2942446bed4faed2517b78b4d76, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7437,7 +7580,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1001987114406557904, guid: b05174020db8d804f8bdaaa57b149f20, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 13.701397
+      value: 14.001398
       objectReference: {fileID: 0}
     - target: {fileID: 1001987114406557904, guid: b05174020db8d804f8bdaaa57b149f20, type: 3}
       propertyPath: m_LocalPosition.y
@@ -7445,23 +7588,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1001987114406557904, guid: b05174020db8d804f8bdaaa57b149f20, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.37915492
+      value: -0.37915468
       objectReference: {fileID: 0}
     - target: {fileID: 1001987114406557904, guid: b05174020db8d804f8bdaaa57b149f20, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.688191
+      value: 0.69671124
       objectReference: {fileID: 0}
     - target: {fileID: 1001987114406557904, guid: b05174020db8d804f8bdaaa57b149f20, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.16245988
+      value: 0.12080307
       objectReference: {fileID: 0}
     - target: {fileID: 1001987114406557904, guid: b05174020db8d804f8bdaaa57b149f20, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.688191
+      value: -0.69671136
       objectReference: {fileID: 0}
     - target: {fileID: 1001987114406557904, guid: b05174020db8d804f8bdaaa57b149f20, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.16245984
+      value: 0.120803095
       objectReference: {fileID: 0}
     - target: {fileID: 1001987114406557904, guid: b05174020db8d804f8bdaaa57b149f20, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -7500,6 +7643,18 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4274058231335789717, guid: b05174020db8d804f8bdaaa57b149f20, type: 3}
+      propertyPath: TargetOffset.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4274058231335789717, guid: b05174020db8d804f8bdaaa57b149f20, type: 3}
+      propertyPath: TargetOffset.y
+      value: -32
+      objectReference: {fileID: 0}
+    - target: {fileID: 4274058231335789717, guid: b05174020db8d804f8bdaaa57b149f20, type: 3}
+      propertyPath: TargetOffset.z
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 4274058231335789717, guid: b05174020db8d804f8bdaaa57b149f20, type: 3}
       propertyPath: Composition.ScreenPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -7512,8 +7667,20 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8679944900127031811, guid: b05174020db8d804f8bdaaa57b149f20, type: 3}
+      propertyPath: FollowOffset.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8679944900127031811, guid: b05174020db8d804f8bdaaa57b149f20, type: 3}
       propertyPath: FollowOffset.y
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8679944900127031811, guid: b05174020db8d804f8bdaaa57b149f20, type: 3}
+      propertyPath: FollowOffset.z
+      value: -2.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8679944900127031811, guid: b05174020db8d804f8bdaaa57b149f20, type: 3}
+      propertyPath: TrackerSettings.BindingMode
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7834,74 +8001,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2656258379399446995, guid: 38462bc242c05c4499c79944f8b56e78, type: 3}
   m_PrefabInstance: {fileID: 1229103272}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &578259460
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1602817444349381328, guid: da1c77f89405ff04ea0fc7cf0bd0d8d8, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.27400023
-      objectReference: {fileID: 0}
-    - target: {fileID: 1602817444349381328, guid: da1c77f89405ff04ea0fc7cf0bd0d8d8, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 2.3500013
-      objectReference: {fileID: 0}
-    - target: {fileID: 1602817444349381328, guid: da1c77f89405ff04ea0fc7cf0bd0d8d8, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.20500004
-      objectReference: {fileID: 0}
-    - target: {fileID: 1602817444349381328, guid: da1c77f89405ff04ea0fc7cf0bd0d8d8, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 1602817444349381328, guid: da1c77f89405ff04ea0fc7cf0bd0d8d8, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.00000001545431
-      objectReference: {fileID: 0}
-    - target: {fileID: 1602817444349381328, guid: da1c77f89405ff04ea0fc7cf0bd0d8d8, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 1602817444349381328, guid: da1c77f89405ff04ea0fc7cf0bd0d8d8, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.00000001545431
-      objectReference: {fileID: 0}
-    - target: {fileID: 1602817444349381328, guid: da1c77f89405ff04ea0fc7cf0bd0d8d8, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1602817444349381328, guid: da1c77f89405ff04ea0fc7cf0bd0d8d8, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1602817444349381328, guid: da1c77f89405ff04ea0fc7cf0bd0d8d8, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2122753800233996394, guid: da1c77f89405ff04ea0fc7cf0bd0d8d8, type: 3}
-      propertyPath: m_Name
-      value: "\u7834\u58CA\u53EF\u80FDwatertower"
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: da1c77f89405ff04ea0fc7cf0bd0d8d8, type: 3}
---- !u!114 &578259461 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1464162949614865123, guid: da1c77f89405ff04ea0fc7cf0bd0d8d8, type: 3}
-  m_PrefabInstance: {fileID: 578259460}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4bc505c106dc966428036817850d80c3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &592235082
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7979,6 +8078,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1602817444349381328, guid: da1c77f89405ff04ea0fc7cf0bd0d8d8, type: 3}
   m_PrefabInstance: {fileID: 592235082}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &599315175
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 599315176}
+  m_Layer: 0
+  m_Name: LeftRope3End
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &599315176
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 599315175}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -16, y: 5.1, z: 7.1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1184916289}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &599803381
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8055,6 +8185,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rope_Part_1 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 5045101233709593050, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: m_TagString
+      value: RopeParts
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847713128311920299, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: cff2b2942446bed4faed2517b78b4d76, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8260,6 +8398,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rope_Part_1 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 5045101233709593050, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: m_TagString
+      value: RopeParts
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847713128311920299, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: cff2b2942446bed4faed2517b78b4d76, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8351,6 +8497,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rope_Part_1 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 5045101233709593050, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: m_TagString
+      value: RopeParts
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847713128311920299, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: cff2b2942446bed4faed2517b78b4d76, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8642,6 +8796,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rope_Part_1 (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 5045101233709593050, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: m_TagString
+      value: RopeParts
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847713128311920299, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: cff2b2942446bed4faed2517b78b4d76, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8768,37 +8930,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1510712901304232389, guid: a0784937bb3831e439d58b0e2bf68381, type: 3}
   m_PrefabInstance: {fileID: 1021293968}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &628272066
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 628272067}
-  m_Layer: 0
-  m_Name: RightRope3End
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &628272067
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 628272066}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -16.2, y: 5.1, z: 10.3}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1558248897}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &635757450 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7376279335950549500, guid: d1dc7e08940259a4ea806373c756b152, type: 3}
@@ -9027,6 +9158,11 @@ Transform:
   - {fileID: 1690077706}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: -30, z: 0}
+--- !u!4 &639340299 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -3773368730949671011, guid: 3efa18409f3a284408c9f34da9b2cecb, type: 3}
+  m_PrefabInstance: {fileID: 2019293625}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &640955501
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9103,6 +9239,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rope_Part_1 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 5045101233709593050, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: m_TagString
+      value: RopeParts
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847713128311920299, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: cff2b2942446bed4faed2517b78b4d76, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9380,6 +9524,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rope_Part_1
       objectReference: {fileID: 0}
+    - target: {fileID: 5045101233709593050, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: m_TagString
+      value: RopeParts
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847713128311920299, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: cff2b2942446bed4faed2517b78b4d76, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9501,6 +9653,114 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 943155034941316108, guid: 5ec5a4149c4f65a468914f6ccb1abf16, type: 3}
   m_PrefabInstance: {fileID: 665772766}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &670072713
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 670072714}
+  - component: {fileID: 670072717}
+  - component: {fileID: 670072716}
+  - component: {fileID: 670072715}
+  m_Layer: 5
+  m_Name: TaikanMeterImage
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &670072714
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 670072713}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 414652189}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 800, y: 300}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &670072715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 670072713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca23402fa3ccfaf41a607e41bab3007b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageSource: {fileID: 2025167755}
+  meterImage: {fileID: 670072716}
+  stageSprites:
+  - {fileID: 21300000, guid: ff0b1499998fd464cb42404e3132b819, type: 3}
+  - {fileID: 21300000, guid: 2627b6a6d84501243b7aa56caeb54784, type: 3}
+  - {fileID: 21300000, guid: 79dfcb74d0801e74aa9b171e4a8b78dd, type: 3}
+  - {fileID: 21300000, guid: 4cec3501e576dc34da538682e0c28c64, type: 3}
+  - {fileID: 21300000, guid: cad2b8237c073fb42a80bb5f7deba63e, type: 3}
+  - {fileID: 21300000, guid: ac963cf91c0b4b04ab4b7665b1a61e29, type: 3}
+  stageIcons:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  warningMarkImage: {fileID: 1379075732}
+  warningAudioSource: {fileID: 1379075731}
+  warningSound: {fileID: 8300000, guid: 0db1cbc63c446cc4f9fa749981b7caba, type: 3}
+  showWarningAtDamageCount: 4
+  showSetupWarnings: 1
+--- !u!114 &670072716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 670072713}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &670072717
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 670072713}
+  m_CullTransparentMesh: 1
 --- !u!1 &675517726
 GameObject:
   m_ObjectHideFlags: 0
@@ -9687,7 +9947,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3704667015061727503, guid: 4c52200cec170c649895d8466c9decf2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.9043975
+      value: 0.094397545
       objectReference: {fileID: 0}
     - target: {fileID: 3704667015061727503, guid: 4c52200cec170c649895d8466c9decf2, type: 3}
       propertyPath: m_LocalPosition.y
@@ -9695,7 +9955,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3704667015061727503, guid: 4c52200cec170c649895d8466c9decf2, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.190845
+      value: 15.770845
       objectReference: {fileID: 0}
     - target: {fileID: 3704667015061727503, guid: 4c52200cec170c649895d8466c9decf2, type: 3}
       propertyPath: m_LocalRotation.w
@@ -10326,6 +10586,37 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a0784937bb3831e439d58b0e2bf68381, type: 3}
+--- !u!1 &716747818
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 716747819}
+  m_Layer: 0
+  m_Name: LeftRope2Start
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &716747819
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 716747818}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.121, y: 5.1, z: 7.498}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1184916289}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &717922883
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10402,6 +10693,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rope_Part_1 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 5045101233709593050, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: m_TagString
+      value: RopeParts
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847713128311920299, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: cff2b2942446bed4faed2517b78b4d76, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11392,6 +11691,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rope_Part_1 (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 5045101233709593050, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: m_TagString
+      value: RopeParts
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847713128311920299, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: cff2b2942446bed4faed2517b78b4d76, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11493,6 +11800,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rope_Part_1 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 5045101233709593050, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: m_TagString
+      value: RopeParts
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847713128311920299, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: cff2b2942446bed4faed2517b78b4d76, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11639,37 +11954,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 779297924}
   m_CullTransparentMesh: 1
---- !u!1 &781557421
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 781557422}
-  m_Layer: 0
-  m_Name: LeftRope2Start
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &781557422
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 781557421}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.121, y: 5.1, z: 7.498}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1558248897}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &782791923 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3566025896844707471, guid: 6571bbbccee7f2d45bb86da3391f3d61, type: 3}
@@ -11751,6 +12035,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rope_Part_1 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 5045101233709593050, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: m_TagString
+      value: RopeParts
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847713128311920299, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: cff2b2942446bed4faed2517b78b4d76, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -11766,6 +12058,50 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1558725524716413012, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
   m_PrefabInstance: {fileID: 782951217}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &785918975
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 785918977}
+  - component: {fileID: 785918976}
+  m_Layer: 0
+  m_Name: DebugComent
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &785918976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 785918975}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26640544d654617488948b527d30127c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &785918977
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 785918975}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 13.628273, y: 1.870118, z: -2.77812}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &791351389
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13770,6 +14106,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rope_Part_1 (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 5045101233709593050, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: m_TagString
+      value: RopeParts
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847713128311920299, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: cff2b2942446bed4faed2517b78b4d76, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13949,6 +14293,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rope_Part_1 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 5045101233709593050, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: m_TagString
+      value: RopeParts
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847713128311920299, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: cff2b2942446bed4faed2517b78b4d76, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14040,6 +14392,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rope_Part_1 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 5045101233709593050, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: m_TagString
+      value: RopeParts
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847713128311920299, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: cff2b2942446bed4faed2517b78b4d76, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14317,6 +14677,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rope_Part_1 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 5045101233709593050, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: m_TagString
+      value: RopeParts
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847713128311920299, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: cff2b2942446bed4faed2517b78b4d76, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14423,6 +14791,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rope_Part_1 (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 5045101233709593050, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: m_TagString
+      value: RopeParts
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847713128311920299, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: cff2b2942446bed4faed2517b78b4d76, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14569,6 +14945,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rope_Part_1 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 5045101233709593050, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: m_TagString
+      value: RopeParts
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847713128311920299, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: cff2b2942446bed4faed2517b78b4d76, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14717,6 +15101,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rope_Part_1 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 5045101233709593050, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: m_TagString
+      value: RopeParts
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847713128311920299, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: cff2b2942446bed4faed2517b78b4d76, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14829,6 +15221,37 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 227828391}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &947017345
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 947017346}
+  m_Layer: 0
+  m_Name: RightRope2Start
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &947017346
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 947017345}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.09, y: 5.1, z: 8}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1184916289}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &958525703
 GameObject:
@@ -15020,6 +15443,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rope_Part_1 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 5045101233709593050, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: m_TagString
+      value: RopeParts
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847713128311920299, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: cff2b2942446bed4faed2517b78b4d76, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15427,37 +15858,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 2141926560}
   m_SourcePrefab: {fileID: 100100000, guid: 5ee0d8660da4ff94c90727c228704266, type: 3}
---- !u!1 &1040415816
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1040415817}
-  m_Layer: 0
-  m_Name: LeftRope3End
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1040415817
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1040415816}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -16, y: 5.1, z: 7.1}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1558248897}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &1040458820 stripped
 Rigidbody:
   m_CorrespondingSourceObject: {fileID: 9026883585941259984, guid: 5ec5a4149c4f65a468914f6ccb1abf16, type: 3}
@@ -15566,6 +15966,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rope_Part_1 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 5045101233709593050, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: m_TagString
+      value: RopeParts
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847713128311920299, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: cff2b2942446bed4faed2517b78b4d76, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15735,6 +16143,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rope_Part_1 (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 5045101233709593050, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: m_TagString
+      value: RopeParts
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847713128311920299, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: cff2b2942446bed4faed2517b78b4d76, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16029,15 +16445,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2233287355492931491, guid: 6571bbbccee7f2d45bb86da3391f3d61, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 10.92
       objectReference: {fileID: 0}
     - target: {fileID: 2233287355492931491, guid: 6571bbbccee7f2d45bb86da3391f3d61, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2233287355492931491, guid: 6571bbbccee7f2d45bb86da3391f3d61, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 3.27
       objectReference: {fileID: 0}
     - target: {fileID: 2233287355492931491, guid: 6571bbbccee7f2d45bb86da3391f3d61, type: 3}
       propertyPath: m_LocalRotation.w
@@ -16197,7 +16613,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3697185708021895259, guid: 6571bbbccee7f2d45bb86da3391f3d61, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.89
+      value: -13.7
       objectReference: {fileID: 0}
     - target: {fileID: 3697185708021895259, guid: 6571bbbccee7f2d45bb86da3391f3d61, type: 3}
       propertyPath: m_LocalPosition.y
@@ -16205,7 +16621,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3697185708021895259, guid: 6571bbbccee7f2d45bb86da3391f3d61, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -7.4
+      value: 6.18
       objectReference: {fileID: 0}
     - target: {fileID: 3697185708021895259, guid: 6571bbbccee7f2d45bb86da3391f3d61, type: 3}
       propertyPath: m_LocalRotation.w
@@ -17355,6 +17771,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rope_Part_1 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 5045101233709593050, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: m_TagString
+      value: RopeParts
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847713128311920299, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: cff2b2942446bed4faed2517b78b4d76, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17613,6 +18037,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rope_Part_1 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 5045101233709593050, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: m_TagString
+      value: RopeParts
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847713128311920299, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: cff2b2942446bed4faed2517b78b4d76, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17899,7 +18331,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6895439021422925029, guid: 41e406a5a55dddc43bd0ce556a427c10, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 251.61575
+      value: 252.21
       objectReference: {fileID: 0}
     - target: {fileID: 6895439021422925029, guid: 41e406a5a55dddc43bd0ce556a427c10, type: 3}
       propertyPath: m_LocalRotation.w
@@ -18010,6 +18442,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rope_Part_1 (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 5045101233709593050, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: m_TagString
+      value: RopeParts
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847713128311920299, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: cff2b2942446bed4faed2517b78b4d76, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18056,7 +18496,7 @@ PrefabInstance:
     - target: {fileID: 20523243259468201, guid: 1d7683ca59d0377419261a254cba261d, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 2019293630}
+      objectReference: {fileID: 639340299}
     - target: {fileID: 20523243259468201, guid: 1d7683ca59d0377419261a254cba261d, type: 3}
       propertyPath: Message
       value: 
@@ -18715,6 +19155,47 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1602817444349381328, guid: da1c77f89405ff04ea0fc7cf0bd0d8d8, type: 3}
   m_PrefabInstance: {fileID: 1183056943}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1184916288
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1184916289}
+  m_Layer: 0
+  m_Name: RoutePoints
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1184916289
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1184916288}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 7.707938, y: -2.752996, z: -3.648587}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 464529537}
+  - {fileID: 1332896881}
+  - {fileID: 716747819}
+  - {fileID: 13905136}
+  - {fileID: 289979342}
+  - {fileID: 599315176}
+  - {fileID: 947017346}
+  - {fileID: 2106425364}
+  - {fileID: 1530740723}
+  - {fileID: 532709947}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1185798570
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18856,6 +19337,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rope_Part_1 (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 5045101233709593050, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: m_TagString
+      value: RopeParts
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847713128311920299, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: cff2b2942446bed4faed2517b78b4d76, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -19080,6 +19569,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rope_Part_1 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 5045101233709593050, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: m_TagString
+      value: RopeParts
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847713128311920299, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: cff2b2942446bed4faed2517b78b4d76, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -19164,7 +19661,7 @@ MonoBehaviour:
   PivotOffset: {x: 0, y: 0, z: 0}
   AmplitudeGain: 1
   FrequencyGain: 1
-  m_NoiseOffsets: {x: 0, y: 0, z: 0}
+  m_NoiseOffsets: {x: -762.5532, y: 73.69266, z: -491.08728}
 --- !u!4 &1208847642 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7729173914471424540, guid: 3efa18409f3a284408c9f34da9b2cecb, type: 3}
@@ -19342,6 +19839,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rope_Part_1 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 5045101233709593050, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: m_TagString
+      value: RopeParts
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847713128311920299, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: cff2b2942446bed4faed2517b78b4d76, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -19682,6 +20187,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rope_Part_1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5045101233709593050, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: m_TagString
+      value: RopeParts
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847713128311920299, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: cff2b2942446bed4faed2517b78b4d76, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -19834,15 +20347,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3925493241121951573, guid: 16856126b1808f449b4364f90336750b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 5.620845
+      value: 5.620846
       objectReference: {fileID: 0}
     - target: {fileID: 3925493241121951573, guid: 16856126b1808f449b4364f90336750b, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.15830763
+      value: -0.15830764
       objectReference: {fileID: 0}
     - target: {fileID: 3925493241121951573, guid: 16856126b1808f449b4364f90336750b, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.02443432
+      value: -0.024434322
       objectReference: {fileID: 0}
     - target: {fileID: 3925493241121951573, guid: 16856126b1808f449b4364f90336750b, type: 3}
       propertyPath: m_LocalRotation.y
@@ -19850,7 +20363,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3925493241121951573, guid: 16856126b1808f449b4364f90336750b, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.15057111
+      value: -0.15057112
       objectReference: {fileID: 0}
     - target: {fileID: 3925493241121951573, guid: 16856126b1808f449b4364f90336750b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -19864,6 +20377,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6401884664611525510, guid: 16856126b1808f449b4364f90336750b, type: 3}
+      propertyPath: FollowOffset.x
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6401884664611525510, guid: 16856126b1808f449b4364f90336750b, type: 3}
+      propertyPath: FollowOffset.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6401884664611525510, guid: 16856126b1808f449b4364f90336750b, type: 3}
+      propertyPath: FollowOffset.z
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6401884664611525510, guid: 16856126b1808f449b4364f90336750b, type: 3}
+      propertyPath: TrackerSettings.BindingMode
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 6469376863843064002, guid: 16856126b1808f449b4364f90336750b, type: 3}
       propertyPath: Target.LookAtTarget
       value: 
@@ -19872,6 +20401,18 @@ PrefabInstance:
       propertyPath: Target.TrackingTarget
       value: 
       objectReference: {fileID: 2019293630}
+    - target: {fileID: 7507401161864976731, guid: 16856126b1808f449b4364f90336750b, type: 3}
+      propertyPath: TargetOffset.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7507401161864976731, guid: 16856126b1808f449b4364f90336750b, type: 3}
+      propertyPath: TargetOffset.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7507401161864976731, guid: 16856126b1808f449b4364f90336750b, type: 3}
+      propertyPath: TargetOffset.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8713226846898930203, guid: 16856126b1808f449b4364f90336750b, type: 3}
       propertyPath: m_Name
       value: EventDinoCamera
@@ -20491,78 +21032,6 @@ Rigidbody:
   m_CorrespondingSourceObject: {fileID: 1332120886260508361, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
   m_PrefabInstance: {fileID: 2109548796}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &1306021602
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 79184350280637073, guid: 53dae55609a923f46a3a6b92980e075d, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.38100016
-      objectReference: {fileID: 0}
-    - target: {fileID: 79184350280637073, guid: 53dae55609a923f46a3a6b92980e075d, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.12099649
-      objectReference: {fileID: 0}
-    - target: {fileID: 79184350280637073, guid: 53dae55609a923f46a3a6b92980e075d, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.7350001
-      objectReference: {fileID: 0}
-    - target: {fileID: 79184350280637073, guid: 53dae55609a923f46a3a6b92980e075d, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 79184350280637073, guid: 53dae55609a923f46a3a6b92980e075d, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 79184350280637073, guid: 53dae55609a923f46a3a6b92980e075d, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 79184350280637073, guid: 53dae55609a923f46a3a6b92980e075d, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 79184350280637073, guid: 53dae55609a923f46a3a6b92980e075d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 79184350280637073, guid: 53dae55609a923f46a3a6b92980e075d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 79184350280637073, guid: 53dae55609a923f46a3a6b92980e075d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 743798809834749995, guid: 53dae55609a923f46a3a6b92980e075d, type: 3}
-      propertyPath: m_Name
-      value: "\u7834\u58CA\u53EF\u80FDbench"
-      objectReference: {fileID: 0}
-    - target: {fileID: 8637744638529139590, guid: 53dae55609a923f46a3a6b92980e075d, type: 3}
-      propertyPath: m_IsKinematic
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 53dae55609a923f46a3a6b92980e075d, type: 3}
---- !u!114 &1306021603 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5504758486858400484, guid: 53dae55609a923f46a3a6b92980e075d, type: 3}
-  m_PrefabInstance: {fileID: 1306021602}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4bc505c106dc966428036817850d80c3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &1307251435 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5597045038865044916, guid: 6571bbbccee7f2d45bb86da3391f3d61, type: 3}
@@ -20989,11 +21458,50 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rope_Part_1 (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 5045101233709593050, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: m_TagString
+      value: RopeParts
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847713128311920299, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: cff2b2942446bed4faed2517b78b4d76, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+--- !u!1 &1332896880
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1332896881}
+  m_Layer: 0
+  m_Name: CommonRope1End
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1332896881
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1332896880}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.6, y: 5.1, z: 5.2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1184916289}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1334698750
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21281,6 +21789,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rope_Part_1 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 5045101233709593050, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: m_TagString
+      value: RopeParts
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847713128311920299, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: cff2b2942446bed4faed2517b78b4d76, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -21432,6 +21948,179 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc3490d43bb045048b55d2edd5573a55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1379075729
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1379075730}
+  - component: {fileID: 1379075733}
+  - component: {fileID: 1379075732}
+  - component: {fileID: 1379075731}
+  m_Layer: 5
+  m_Name: TaikanWarningMark
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1379075730
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1379075729}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.4, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 414652189}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 800, y: 480}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!82 &1379075731
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1379075729}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &1379075732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1379075729}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 295a3aa5380d17545a5550627172d3ab, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1379075733
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1379075729}
+  m_CullTransparentMesh: 1
 --- !u!1001 &1389673148
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21708,6 +22397,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rope_Part_1 (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 5045101233709593050, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: m_TagString
+      value: RopeParts
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847713128311920299, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: cff2b2942446bed4faed2517b78b4d76, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -22029,6 +22726,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rope_Part_1 (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 5045101233709593050, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: m_TagString
+      value: RopeParts
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847713128311920299, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: cff2b2942446bed4faed2517b78b4d76, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -22300,37 +23005,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a0784937bb3831e439d58b0e2bf68381, type: 3}
---- !u!1 &1439306598
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1439306599}
-  m_Layer: 0
-  m_Name: RightRope2End
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1439306599
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1439306598}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.8, y: 5.1, z: 9.5}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1558248897}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1449972505
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22818,6 +23492,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rope_Part_1 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 5045101233709593050, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: m_TagString
+      value: RopeParts
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847713128311920299, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: cff2b2942446bed4faed2517b78b4d76, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -23412,6 +24094,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rope_Part_1 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 5045101233709593050, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: m_TagString
+      value: RopeParts
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847713128311920299, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: cff2b2942446bed4faed2517b78b4d76, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -23816,6 +24506,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rope_Part_1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5045101233709593050, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: m_TagString
+      value: RopeParts
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847713128311920299, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: cff2b2942446bed4faed2517b78b4d76, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -23894,15 +24592,15 @@ PrefabInstance:
     - target: {fileID: 6910427845253229610, guid: e555ffc7cc719a74c8ca8d3f395dc177, type: 3}
       propertyPath: 'parts.Array.data[6]'
       value: 
-      objectReference: {fileID: 578259461}
+      objectReference: {fileID: 0}
     - target: {fileID: 6910427845253229610, guid: e555ffc7cc719a74c8ca8d3f395dc177, type: 3}
       propertyPath: 'parts.Array.data[7]'
       value: 
-      objectReference: {fileID: 1770341025}
+      objectReference: {fileID: 0}
     - target: {fileID: 6910427845253229610, guid: e555ffc7cc719a74c8ca8d3f395dc177, type: 3}
       propertyPath: 'parts.Array.data[8]'
       value: 
-      objectReference: {fileID: 1306021603}
+      objectReference: {fileID: 0}
     - target: {fileID: 6931847627701687701, guid: e555ffc7cc719a74c8ca8d3f395dc177, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -23988,37 +24686,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e555ffc7cc719a74c8ca8d3f395dc177, type: 3}
---- !u!1 &1517837914
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1517837915}
-  m_Layer: 0
-  m_Name: LeftRope3Start
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1517837915
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1517837914}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.9, y: 5.1, z: 5.7}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1558248897}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1518865357
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24173,6 +24840,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rope_Part_1 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 5045101233709593050, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: m_TagString
+      value: RopeParts
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847713128311920299, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: cff2b2942446bed4faed2517b78b4d76, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -24193,6 +24868,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2656258379399446995, guid: 38462bc242c05c4499c79944f8b56e78, type: 3}
   m_PrefabInstance: {fileID: 1574288459}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1530740722
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1530740723}
+  m_Layer: 0
+  m_Name: RightRope3Start
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1530740723
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1530740722}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -9.3, y: 5.1, z: 10.8}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1184916289}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1530989468
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25015,47 +25721,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc3490d43bb045048b55d2edd5573a55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1558248896
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1558248897}
-  m_Layer: 0
-  m_Name: RoutePoints
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1558248897
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1558248896}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.707938, y: -2.752996, z: -3.6485865}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 331563958}
-  - {fileID: 189875724}
-  - {fileID: 781557422}
-  - {fileID: 1605121873}
-  - {fileID: 1517837915}
-  - {fileID: 1040415817}
-  - {fileID: 245365475}
-  - {fileID: 1439306599}
-  - {fileID: 55376489}
-  - {fileID: 628272067}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1560202639 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9058432095749335609, guid: e555ffc7cc719a74c8ca8d3f395dc177, type: 3}
@@ -25453,6 +26118,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rope_Part_1 (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 5045101233709593050, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: m_TagString
+      value: RopeParts
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847713128311920299, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: cff2b2942446bed4faed2517b78b4d76, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -25958,8 +26631,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1599052639}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.16245985, y: -0.68819106, z: 0.16245988, w: 0.68819094}
-  m_LocalPosition: {x: 2.907, y: 4.051043, z: -3.97}
+  m_LocalRotation: {x: 0.120803066, y: -0.69671136, z: 0.120803095, w: 0.69671124}
+  m_LocalPosition: {x: 3.2070003, y: 4.051043, z: -3.9699998}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -26112,37 +26785,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de792a76a91c76142807a0d6495e8502, type: 3}
---- !u!1 &1605121872
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1605121873}
-  m_Layer: 0
-  m_Name: LeftRope2End
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1605121873
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1605121872}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.9, y: 5.1, z: 5.9}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1558248897}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1605663075
 GameObject:
   m_ObjectHideFlags: 0
@@ -26612,6 +27254,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rope_Part_1 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 5045101233709593050, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: m_TagString
+      value: RopeParts
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847713128311920299, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: cff2b2942446bed4faed2517b78b4d76, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -27095,6 +27745,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rope_Part_1 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 5045101233709593050, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: m_TagString
+      value: RopeParts
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847713128311920299, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: cff2b2942446bed4faed2517b78b4d76, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -27992,78 +28650,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f2fa07e189efb654d886ca7045692383, type: 3}
---- !u!1001 &1770341024
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 510181765193719236, guid: 9a0656e65b25e9746873f3cff0fbd865, type: 3}
-      propertyPath: m_IsKinematic
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8553421993051382313, guid: 9a0656e65b25e9746873f3cff0fbd865, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.72700024
-      objectReference: {fileID: 0}
-    - target: {fileID: 8553421993051382313, guid: 9a0656e65b25e9746873f3cff0fbd865, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8553421993051382313, guid: 9a0656e65b25e9746873f3cff0fbd865, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.5090002
-      objectReference: {fileID: 0}
-    - target: {fileID: 8553421993051382313, guid: 9a0656e65b25e9746873f3cff0fbd865, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 8553421993051382313, guid: 9a0656e65b25e9746873f3cff0fbd865, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.00000001545431
-      objectReference: {fileID: 0}
-    - target: {fileID: 8553421993051382313, guid: 9a0656e65b25e9746873f3cff0fbd865, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 8553421993051382313, guid: 9a0656e65b25e9746873f3cff0fbd865, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.00000001545431
-      objectReference: {fileID: 0}
-    - target: {fileID: 8553421993051382313, guid: 9a0656e65b25e9746873f3cff0fbd865, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8553421993051382313, guid: 9a0656e65b25e9746873f3cff0fbd865, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8553421993051382313, guid: 9a0656e65b25e9746873f3cff0fbd865, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9077017489596430483, guid: 9a0656e65b25e9746873f3cff0fbd865, type: 3}
-      propertyPath: m_Name
-      value: "\u7834\u58CA\u53EF\u80FDbush"
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 9a0656e65b25e9746873f3cff0fbd865, type: 3}
---- !u!114 &1770341025 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4702958016283609207, guid: 9a0656e65b25e9746873f3cff0fbd865, type: 3}
-  m_PrefabInstance: {fileID: 1770341024}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4bc505c106dc966428036817850d80c3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!54 &1770411869 stripped
 Rigidbody:
   m_CorrespondingSourceObject: {fileID: 9026883585941259984, guid: 5ec5a4149c4f65a468914f6ccb1abf16, type: 3}
@@ -28218,6 +28804,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rope_Part_1 (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 5045101233709593050, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: m_TagString
+      value: RopeParts
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847713128311920299, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: cff2b2942446bed4faed2517b78b4d76, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -28438,6 +29032,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rope_Part_1 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 5045101233709593050, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: m_TagString
+      value: RopeParts
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847713128311920299, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: cff2b2942446bed4faed2517b78b4d76, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -28575,6 +29177,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rope_Part_1 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5045101233709593050, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: m_TagString
+      value: RopeParts
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847713128311920299, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: cff2b2942446bed4faed2517b78b4d76, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -28933,7 +29543,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2826169591337721653, guid: 36c6c6526d84be94888739a44a8de1df, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 650
+      value: 600
       objectReference: {fileID: 0}
     - target: {fileID: 2826169591337721653, guid: 36c6c6526d84be94888739a44a8de1df, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -29122,6 +29732,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rope_Part_1 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 5045101233709593050, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: m_TagString
+      value: RopeParts
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847713128311920299, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: cff2b2942446bed4faed2517b78b4d76, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -29470,6 +30088,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rope_Part_1
       objectReference: {fileID: 0}
+    - target: {fileID: 5045101233709593050, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: m_TagString
+      value: RopeParts
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847713128311920299, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: cff2b2942446bed4faed2517b78b4d76, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -29912,6 +30538,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rope_Part_1 (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 5045101233709593050, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: m_TagString
+      value: RopeParts
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847713128311920299, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: cff2b2942446bed4faed2517b78b4d76, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -30013,7 +30647,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
   m_LocalPosition: {x: -0.68, y: 1.864785, z: -63.08}
-  m_LocalScale: {x: 5, y: 5, z: 5}
+  m_LocalScale: {x: 5, y: 20, z: 20}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2019293630}
@@ -30576,15 +31210,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3925493241121951573, guid: 16856126b1808f449b4364f90336750b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.17095
+      value: -2.85
       objectReference: {fileID: 0}
     - target: {fileID: 3925493241121951573, guid: 16856126b1808f449b4364f90336750b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8.5
+      value: 8.55
       objectReference: {fileID: 0}
     - target: {fileID: 3925493241121951573, guid: 16856126b1808f449b4364f90336750b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.20298
+      value: 3.81
       objectReference: {fileID: 0}
     - target: {fileID: 3925493241121951573, guid: 16856126b1808f449b4364f90336750b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -30596,11 +31230,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3925493241121951573, guid: 16856126b1808f449b4364f90336750b, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.95125127
+      value: 0.95125127
       objectReference: {fileID: 0}
     - target: {fileID: 3925493241121951573, guid: 16856126b1808f449b4364f90336750b, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.16773124
+      value: -0.16773124
       objectReference: {fileID: 0}
     - target: {fileID: 3925493241121951573, guid: 16856126b1808f449b4364f90336750b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -30608,7 +31242,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3925493241121951573, guid: 16856126b1808f449b4364f90336750b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -150
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 3925493241121951573, guid: 16856126b1808f449b4364f90336750b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -31045,6 +31679,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rope_Part_1 (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 5045101233709593050, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: m_TagString
+      value: RopeParts
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847713128311920299, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: cff2b2942446bed4faed2517b78b4d76, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -31080,7 +31722,7 @@ CapsuleCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -31228,6 +31870,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rope_Part_1 (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 5045101233709593050, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: m_TagString
+      value: RopeParts
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847713128311920299, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: cff2b2942446bed4faed2517b78b4d76, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -31671,6 +32321,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rope_Part_1 (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 5045101233709593050, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: m_TagString
+      value: RopeParts
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847713128311920299, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: cff2b2942446bed4faed2517b78b4d76, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -32150,30 +32808,30 @@ MonoBehaviour:
   m_GameObject: {fileID: 2019293626}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 893a06959e0245438ed57e7f3b94c734, type: 3}
+  m_Script: {fileID: 11500000, guid: b296cd2ebfc056c40be1dd19c2baed89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   playerMover: {fileID: 0}
-  moveSpeed: 0.4
+  moveSpeed: 0.3
   startOnPlay: 1
   commonRoutePoints:
-  - {fileID: 331563958}
-  - {fileID: 189875724}
+  - {fileID: 464529537}
+  - {fileID: 1332896881}
   leftRoutePoints:
-  - {fileID: 781557422}
-  - {fileID: 1605121873}
-  - {fileID: 1517837915}
-  - {fileID: 1040415817}
+  - {fileID: 716747819}
+  - {fileID: 13905136}
+  - {fileID: 289979342}
+  - {fileID: 599315176}
   rightRoutePoints:
-  - {fileID: 245365475}
-  - {fileID: 1439306599}
-  - {fileID: 55376489}
-  - {fileID: 628272067}
+  - {fileID: 947017346}
+  - {fileID: 2106425364}
+  - {fileID: 1530740723}
+  - {fileID: 532709947}
   leftRouteKey: 276
   rightRouteKey: 275
   branchGuideText: {fileID: 0}
   branchGuideMessage: "\u5DE6\u30AD\u30FC\u3067\u5DE6\u30EB\u30FC\u30C8 / \u53F3\u30AD\u30FC\u3067\u53F3\u30EB\u30FC\u30C8"
-  balanceManager: {fileID: 1311752719}
+  balanceManager: {fileID: 0}
   pauseBalanceWhileChoosing: 1
 --- !u!1 &2023433995
 GameObject:
@@ -32265,6 +32923,16 @@ MonoBehaviour:
   redFlashDuration: 0.2
   redFlashColor: {r: 1, g: 0, b: 0, a: 1}
   redEmissionIntensity: 2
+  playerTransform: {fileID: 2019293630}
+  playerAnimator: {fileID: 2019293627}
+  walkBoolName: catwalk
+  fallTriggerName: fall
+  fallDuration: 2
+  fallDistance: 2.42
+  gameOverDelay: 2.5
+  balanceManager: {fileID: 1311752719}
+  tightropeAutoGoalMover: {fileID: 2019293633}
+  tightropeRouteController: {fileID: 2019293636}
   debugLog: 1
 --- !u!4 &2025167756
 Transform:
@@ -32921,6 +33589,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rope_Part_1 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5045101233709593050, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: m_TagString
+      value: RopeParts
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847713128311920299, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: cff2b2942446bed4faed2517b78b4d76, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -33049,6 +33725,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rope_Part_1 (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 5045101233709593050, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: m_TagString
+      value: RopeParts
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847713128311920299, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: cff2b2942446bed4faed2517b78b4d76, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -33624,6 +34308,37 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d1dc7e08940259a4ea806373c756b152, type: 3}
+--- !u!1 &2106425363
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2106425364}
+  m_Layer: 0
+  m_Name: RightRope2End
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2106425364
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2106425363}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.8, y: 5.1, z: 9.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1184916289}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2107648814
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33806,6 +34521,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Rope_Part_1
       objectReference: {fileID: 0}
+    - target: {fileID: 5045101233709593050, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: m_TagString
+      value: RopeParts
+      objectReference: {fileID: 0}
+    - target: {fileID: 5847713128311920299, guid: db339a82aaa90f1428405026627eb2f5, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: cff2b2942446bed4faed2517b78b4d76, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -35005,11 +35728,8 @@ SceneRoots:
   - {fileID: 528257493}
   - {fileID: 1902123585}
   - {fileID: 2025167756}
-  - {fileID: 578259460}
-  - {fileID: 1306021602}
   - {fileID: 570325115}
   - {fileID: 993899692}
-  - {fileID: 1770341024}
   - {fileID: 227828391}
   - {fileID: 644938371}
   - {fileID: 86659051}
@@ -35017,4 +35737,5 @@ SceneRoots:
   - {fileID: 1831800753}
   - {fileID: 2023433996}
   - {fileID: 2011547207}
-  - {fileID: 1558248897}
+  - {fileID: 1184916289}
+  - {fileID: 785918977}

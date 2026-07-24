@@ -29,7 +29,7 @@ public class BreakBuilding : MonoBehaviour
 
     private void Start()
     {
-        Debug.Log("デバッグ用 Tで建物全破壊");
+        
     }
     void Update()
     {
